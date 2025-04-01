@@ -1,0 +1,29 @@
+StrategAI – Deployment Instructions
+
+1. Install Python 3.9+ and pip.
+
+2. Create a virtual environment:
+   python -m venv venv
+   source venv/bin/activate (or venv\Scripts\activate on Windows)
+
+3. Install dependencies:
+   pip install -r requirements.txt
+
+4. Run the app:
+   streamlit run app.py
+
+5. For deployment:
+   - Push the folder to GitHub
+   - Deploy to Render.com as a Web Service
+   - Use these commands:
+     Build: pip install -r requirements.txt
+     Start: streamlit run app.py --server.port=10000 --server.enableCORS=false
+
+6. Set environment variables:
+   - OPENAI_API_KEY
+   - GOOGLE_CLIENT_ID
+   - GOOGLE_CLIENT_SECRET
+
+7. For Google Docs/Slides export:
+   - Enable the APIs in Google Cloud Console
+   - Add your credentials.json to the root directory
