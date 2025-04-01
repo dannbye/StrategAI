@@ -1,6 +1,6 @@
 streamlit
 openai
-langchain
+langchain-community
 PyPDF2
 faiss-cpu
 duckduckgo-search
